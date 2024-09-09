@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Web Application testing in Python with Selenium
+title: (WIP) Web Application testing in Python with Selenium
 ---
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![_config.yml]({{ site.baseurl }}/images/selenium-partone-header.png)
 
+## 1. Set up your Python environments.
+In most cases, when running Python code, the preferred approach is to set up a 'virtual environment'. There are multiple ways to do this, with my preferred method being:
 {% highlight powershell %}
 python3 -m venv ./venv
 .\venv\Scripts\activate
 {% endhighlight %}
+You'll know the virtual environment is set up and running when you a green '(venv)' in front of your prompt.
+![image](https://github.com/user-attachments/assets/63dd6147-2fc3-4091-9f6d-c57d89be6be2)
 
 {% highlight powershell %}
 pip install selenium
@@ -33,7 +37,4 @@ print(driver.title)
 driver.quit()
 {% endhighlight %}
 
-![_config.yml]({{ site.baseurl }}https://github.com/user-attachments/assets/c8fcdc62-2a94-4f6e-943a-a19bbc224187)
 ![image](https://github.com/user-attachments/assets/c8fcdc62-2a94-4f6e-943a-a19bbc224187)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
