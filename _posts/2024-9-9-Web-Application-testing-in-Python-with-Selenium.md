@@ -5,6 +5,8 @@ title: (WIP) Web Application testing in Python with Selenium
 
 ![_config.yml]({{ site.baseurl }}/images/selenium-partone-header.png)
 
+![image]{{ site.baseurl }}(images/selenium-partone-header.png)
+
 ## 1. Set up your Python environments.
 In most cases, when running Python code, the preferred approach is to set up a 'virtual environment'. There are multiple ways to do this, with my preferred method being:
 {% highlight powershell %}
