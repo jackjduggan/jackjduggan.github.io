@@ -17,17 +17,18 @@ Make sure you have the following installed before getting started:
 You can verify that you have Go successfully installed by running `go version` in your terminal.
 
 ## Project Setup
-- Create a new directory for your project
-		`mkdir go-album-api`
-		`cd go-album-api/`
-- Create a `main.go` file. This is where the application code will be located.
+- Create a new directory for your project\
+`mkdir go-album-api`\
+`cd go-album-api/`
+- Create a `main.go` file. This is where the application code will be located.\
 `touch main.go`
-- And also a `data.json` file to persistently store our albums.
+- And also a `data.json` file to persistently store our albums.\
 `touch data.json`
 
 ## Initial main.go Setup
 In `main.go`, define `package main` at the top of the file, and declare the following imports:
-```
+
+{% highlight go %}
 package main
 
 import (
@@ -35,16 +36,18 @@ import (
     "log"
     "net/http"
     "os"
-
+    
     "github.com/gin-gonic/gin"
 )
-```
+{% endhighlight %}
+
 For this project, the imports we'll be using are:
 - **encoding/json**: used to encode/decode data between JSON structure and Go structs (which we'll look at in the next step)
 - **log**: used to write output like errors and debug messages to the console
 - **net/http**: provides HTTP client and server functionality, essential for this project
 - **os**: allows interaction with the operating system, such as reading/writing from files
 - **github.com/gin-gonic/gin**: Gin, the web framework we'll be using to build our API.
+Don't worry if these import statements throw up errors, they'll resolve themselves when the code is complete.
 
 ## Defining a Structure
 Next, an album *struct* must be defined. We need to decide what *fields* our albums will have. In this example, we'll do:
@@ -54,10 +57,11 @@ Next, an album *struct* must be defined. We need to decide what *fields* our alb
 - **price**: how much this album will "cost".
 Feel free to add any additional fields you can think of!
 
-```
+{% highlight go %}
 type album struct {
     ID     string  `json:"id"`
     Title  string  `json:"title"`
     Artist string  `json:"artist"`
     Price  float64 `json:"price"`
 }
+{% endhighlight %}
