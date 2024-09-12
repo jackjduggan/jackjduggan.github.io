@@ -32,6 +32,6 @@ class Jack(Person):
 
 ### Contact me
 
-[Email Me 📨](mailto:jackduggan01@hotmail.com)
-[Connect with me on LinkedIn 💼](https://www.linkedin.com/in/jackduggan/)
+[Email Me 📨](mailto:jackduggan01@hotmail.com)\
+[Connect with me on LinkedIn 💼](https://www.linkedin.com/in/jackduggan/)\
 [Check out my GitHub 🧑‍💻](https://github.com/jackjduggan)
