@@ -10,7 +10,7 @@ I'm a recent graduate of the Applied Computing degree course at SETU Waterford, 
 
 ### About Me
 
-{ % highlight python % }
+{% highlight py %}
 class Jack(Person):
     def __init__(self):
         self.name = 'Jack Duggan'
@@ -18,7 +18,7 @@ class Jack(Person):
         self.previous_work = { 'Unum': 'Linux Infrastructure Engineer Intern' }
         self.education = { 'South East Technological University': 'Applied Computing (Cloud & Networks)'}
         self.hobbies = ['Football/Soccer', 'Running', 'Gaming']
-
+        
     def current_location(self):
         return 'Wexford, Ireland'
 
@@ -28,7 +28,7 @@ class Jack(Person):
             'reading': ['Atomic Habits', 'A Game of Thrones'],
             'watching': ['The Bear'],
         }
-{ % endhighlight % }
+{% endhighlight %}
 
 ### Contact me
 
